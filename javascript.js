@@ -11,10 +11,17 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let choice=prompt("rock, paper or scissors?").toLowerCase();
-    if ((choice!=="rock" && choice!=="paper" && choice!=="scissor") || choice===null){
-        return "rock";
-    }
+    let choice;
+    let btns=document.querySelectorAll("button");
+    btns.forEach(button =>{
+        button.addEventListener("click", (e) => {
+            switch(e.target.id){
+                case "rock": choice="rock"; break;
+                case "paper": choice="paper"; break;
+                case "scissor": choice="scissor"; break;
+            }
+        })
+    })
     return choice;
 }
 
