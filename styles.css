@@ -1,0 +1,54 @@
+body{
+    background-color:rgb(35, 35, 71);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.score{
+    font-size: 20px
+}
+
+.button-container{
+    display: flex;
+    gap: 25px;
+}
+
+button{
+    font-size: 25px;
+    background-color: rgb(240, 74, 74);
+    border: 1px solid rgb(240, 74, 74);
+    border-radius: 5px;
+}
+
+.output{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.endGameBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    font-size: 40px;
+}
